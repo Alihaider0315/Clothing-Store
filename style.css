@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+:root {
+    --primaryColor : #61677A;
+    --bgColor : #D8D9DA;
+    --bgFont : 'Poppins', sans-serif;
+    --whiteColor : #FFF;
+    --hoverColor : #61677A;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--bgFont);
+    
+}
+
+#product-box .card {
+    height: 100%; 
+}
+
+
+.card-img-top {
+    max-height: 400px; 
+    object-fit: cover; 
+    margin: 0 auto; 
+}
+
+body {
+    background-color: var(--bgColor);
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: var(--primaryColor);
+    border-color: var(--primaryColor);
+}
+
+.btn-outline-success {
+    color: var(--whiteColor);
+    border-color: var(--primaryColor);
+    background-color: var(--primaryColor);
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: var(--primaryColor);
+    border-color: var(--primaryColor);
+} 
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: var(--hoverColor);
+    border-color: var(--hoverColor);
+} 
+.btn-check:active+.btn-primary, .btn-check:checked+.btn-primary, .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: var(--primaryColor);
+    border-color: var(--primaryColor);
+}
